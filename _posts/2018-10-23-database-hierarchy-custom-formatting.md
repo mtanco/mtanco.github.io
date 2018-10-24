@@ -5,7 +5,7 @@ Using the DBC views, we will get the database location paths of all databases.
 ## Connect to Teradata
 
 
-```Teradata SQL
+```SQL
 %connect vantage19085
 ```
 
@@ -21,14 +21,10 @@ The DBC views store important information about various objects in a Vantage sys
 
 
 
-```Teradata SQL
+```SQL
 select top 10 *
 from dbc.DatabasesV
 ```
-
-
-
-
 
 
 ## Recursive Queries
@@ -36,7 +32,7 @@ from dbc.DatabasesV
 With this logic in mind, we can use a recursive query to navigate the ownership path of each database.
 
 
-```Teradata SQL
+```SQL
 WITH RECURSIVE DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
     --INITIAL CASE
@@ -80,7 +76,7 @@ We could stop here and say this output is good enough for answer our question. B
 By default, the text columns in DBC views are unicode. The nPath function requires latin characters in the accumulate clauses, so we translate these in our select.
 
 
-```Teradata SQL
+```SQL
 WITH RECURSIVE DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
     --INITIAL CASE
@@ -120,7 +116,7 @@ ORDER BY DB_NODE, LVL;
 We cannot use a recursive query as a derived table, so we will create the same output as a recursive view which we can then call from our nPath function.
 
 
-```Teradata SQL
+```SQL
 REPLACE RECURSIVE VIEW DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
     --INITIAL CASE
@@ -155,7 +151,7 @@ REPLACE RECURSIVE VIEW DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
 
 
-```Teradata SQL
+```SQL
 SELECT * FROM DATABASE_HIREARCHY WHERE DB_NODE = 'MT_TEST2';
 ```
 
@@ -167,7 +163,7 @@ SELECT * FROM DATABASE_HIREARCHY WHERE DB_NODE = 'MT_TEST2';
 ### Accumulate Paths
 
 
-```Teradata SQL
+```SQL
 SELECT 
     DB_NAME
     ,CAST(OWNER_PATH AS VARCHAR(1000)) AS OWNER_PATH
@@ -204,7 +200,7 @@ Now that we've accomplished each piece, we'll wrap this up in a parameterized st
 _In the current version of this Jupyter Kernal we cannot build or call stored procedures. You can use this code in your second favorite SQL editor for ease of finding databases :)_
 
 
-```Teradata SQL
+```SQL
 REPLACE PROCEDURE MT_DB_LKUP (IN DB_NAME VARCHAR(4000))
 DYNAMIC RESULT SETS 1
 BEGIN
@@ -290,7 +286,7 @@ END;
 
 
 
-```Teradata SQL
+```SQL
 CALL MT_DB_LKUP('MT_TEST2');
 ```
 
@@ -301,13 +297,13 @@ CALL MT_DB_LKUP('MT_TEST2');
 ## Disconnect from the Database
 
 
-```Teradata SQL
+```SQL
 %disconnect vantage19085
 ```
 
     Success: 'vantage19085' disconnected
 
 
-```Teradata SQL
+```SQL
 
 ```
