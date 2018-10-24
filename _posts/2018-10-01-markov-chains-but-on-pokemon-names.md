@@ -512,7 +512,7 @@ all_pokemon['prediction'] = all_pokemon.apply(predicted_generation, axis=1)
 
 #### We've Got Impressive Results!
 
-If we were to just guess the generation randomly, we would expect accuracies of ~1/7 or 14%. We know that we are giving the models a big advantage by training and testing on the same data. Even so, our prediction results are much much better than 14%. It's tempting to then claim that the names of Pokémon really did change from season to season, we proved it! And yes, there were some changes like loner names and more dashes. However, our training data sets are so tiny that we definitely just have over fitted models :) 
+If we were to just guess the generation randomly, we would expect accuracies of ~1/7 or 14%. We know that we are giving the models a big advantage by training and testing on the same data. Even so, our prediction results are much much better than 14%. It's tempting to then claim that the names of Pokémon really did change from season to season, we proved it! And yes, there were some changes like longer names and more dashes. However, our training data sets are so tiny that we definitely just have over fitted models :) 
 
 
 ```python
