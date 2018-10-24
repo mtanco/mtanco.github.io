@@ -5,7 +5,7 @@ Using the DBC views, we will get the database location paths of all databases.
 ## Connect to Teradata
 
 
-```SQL
+```sql
 %connect vantage19085
 ```
 
@@ -21,7 +21,7 @@ The DBC views store important information about various objects in a Vantage sys
 
 
 
-```SQL
+```sql
 select top 10 *
 from dbc.DatabasesV
 ```
@@ -32,7 +32,7 @@ from dbc.DatabasesV
 With this logic in mind, we can use a recursive query to navigate the ownership path of each database.
 
 
-```SQL
+```sql
 WITH RECURSIVE DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
     --INITIAL CASE
@@ -76,7 +76,7 @@ We could stop here and say this output is good enough for answer our question. B
 By default, the text columns in DBC views are unicode. The nPath function requires latin characters in the accumulate clauses, so we translate these in our select.
 
 
-```SQL
+```sql
 WITH RECURSIVE DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
     --INITIAL CASE
@@ -116,7 +116,7 @@ ORDER BY DB_NODE, LVL;
 We cannot use a recursive query as a derived table, so we will create the same output as a recursive view which we can then call from our nPath function.
 
 
-```SQL
+```sql
 REPLACE RECURSIVE VIEW DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
     --INITIAL CASE
@@ -146,24 +146,17 @@ REPLACE RECURSIVE VIEW DATABASE_HIREARCHY (DB_NODE,DB_NAME,DB_OWNER,LVL) AS (
 
 
 
-    Success: 0 rows affected
 
-
-
-
-```SQL
+```sql
 SELECT * FROM DATABASE_HIREARCHY WHERE DB_NODE = 'MT_TEST2';
 ```
-
-
-
 
 
 
 ### Accumulate Paths
 
 
-```SQL
+```sql
 SELECT 
     DB_NAME
     ,CAST(OWNER_PATH AS VARCHAR(1000)) AS OWNER_PATH
@@ -190,9 +183,6 @@ ORDER BY PATH_LENGTH DESC;
 
 
 
-
-
-
 ## Wrapping It Up
 
 Now that we've accomplished each piece, we'll wrap this up in a parameterized stored procedure. This will take a a database name as input and return a single row with that name, ownership path, and path length.
@@ -200,7 +190,7 @@ Now that we've accomplished each piece, we'll wrap this up in a parameterized st
 _In the current version of this Jupyter Kernal we cannot build or call stored procedures. You can use this code in your second favorite SQL editor for ease of finding databases :)_
 
 
-```SQL
+```sql
 REPLACE PROCEDURE MT_DB_LKUP (IN DB_NAME VARCHAR(4000))
 DYNAMIC RESULT SETS 1
 BEGIN
@@ -282,28 +272,19 @@ END;
 ```
 
 
-    Unable to run SQL: Unable to run SQL query: Database reported error:3706:Syntax error: Invalid  SQL Statement.
-
-
-
-```SQL
+```sql
 CALL MT_DB_LKUP('MT_TEST2');
 ```
 
-
-    No active connection
 
 
 ## Disconnect from the Database
 
 
-```SQL
+```sql
 %disconnect vantage19085
 ```
 
     Success: 'vantage19085' disconnected
 
 
-```SQL
-
-```
