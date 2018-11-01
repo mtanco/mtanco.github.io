@@ -20,5 +20,5 @@ I **work** as a Senior Consultant for [Teradata](https://www.teradata.com/) in o
 
 I tend to **play** by coding and tinkering. The main point of this site to host the output of these fun, personal projects. 
 
-Outside of the computer, my main hobbies are spending time with my **dog & husband**, playing **ukulele**, and flipping around at my adult gymnastics class. 
+Outside of the computer, my main hobbies are spending time with my **dog & husband**, playing **ukulele**, and flipping around at my adult **gymnastics** class. 
 
