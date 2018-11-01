@@ -1,5 +1,3 @@
-# Happy Halloween!
-
 Earlier this year we moved from our downtown apartment to start renting a nice little house in a nearby city suburb. There are a lot of things I miss about being right in the thick of it, but we still have 5 breweries within walking distance and what more do you really need?
 
 I have been getting so excited for Halloween! This would be our first time getting trick-or-treat-ers and I was pumped to see all the little cuties in their fun costumes. 
@@ -49,7 +47,7 @@ OH WELL. At least I got to spend Halloween at home - most of this month has been
 
 
 <p align="center">
-  ![finally found each other](/images/halloween2018)
+  ![finally found each other](/images/halloween2018).jpg
 </p>
 
 
