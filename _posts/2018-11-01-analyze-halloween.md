@@ -46,9 +46,9 @@ Well, this happens regularly with data, we don't actually have any. Here are som
 OH WELL. At least I got to spend Halloween at home - most of this month has been spread across the US. 
 
 
-<p align="center">
+
   ![finally found each other](/images/halloween2018.jpg)
-</p>
+
 
 
 Happy Halloween!
