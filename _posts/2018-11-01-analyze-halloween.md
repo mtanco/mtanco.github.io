@@ -13,11 +13,11 @@ There were 4 main data points I was ready to record for each candy-requester:
 	* Medium: 1st to 6th grade, ish
 	* Tweens & Teens
 * Group
-	* Alone - the trick-or-treat-er completely by themselves
+	* Alone - the trick-or-treat-er is completely by themselves
 	* Family - parents and siblings
 	* Families - groups of kids and parents
 	* Group - multiple kids but no parents
-* Cuteness Ranking - the opinion of my darling, note taking husband
+* Cuteness Ranking - the opinion of my darling, notetaking husband
 	
 If we do this in future years we might also record amount and types of candy taken and the time.
 
@@ -47,7 +47,7 @@ OH WELL. At least I got to spend Halloween at home - most of this month has been
 
 
 <p align="center">
-  ![finally found each other](/images/halloween2018).jpg
+  ![finally found each other](/images/halloween2018.jpg)
 </p>
 
 
