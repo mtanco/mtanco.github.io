@@ -15,9 +15,9 @@ redirect_from:
 
 ***
 
-# Reading as of November 2018
+# Read as of November 2018
 
-* (Forecasting: Principles and Practice - Rob J Hyndman and George Athanasopoulos)[https://otexts.org/fpp2/]
+* [Forecasting: Principles and Practice - Rob J Hyndman and George Athanasopoulos](https://otexts.org/fpp2/)
 
 
 
