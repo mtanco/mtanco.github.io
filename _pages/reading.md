@@ -1,5 +1,5 @@
 ---
-title: "Resume"
+title: "Consumed Books"
 permalink: /reading/
 author_profile: true
 redirect_from:
