@@ -19,7 +19,10 @@ main:
 #    url: /portfolio/
 
   - title: "Resume"
-    url: /cv/
+    url: /resume/
 
 #  - title: "Guide"
 #    url: /markdown/
+
+  - title: "Reading List"
+    url: /reading/
