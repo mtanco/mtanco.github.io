@@ -191,4 +191,4 @@ AND EXTRACT(YEAR FROM end_of_month) BETWEEN 2010 AND 2014
 AND rain_gauge IN ('RG01','RG02','RG03','RG18')
 order by 1,2
 ```
-![Custom Line Visualization](/images/rain_specifc_gauges_line.PNG)
+![Custom Line Visualization](/images/rain_specific_gauges_line.PNG)
