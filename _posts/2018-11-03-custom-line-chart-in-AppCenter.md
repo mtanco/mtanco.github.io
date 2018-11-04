@@ -64,6 +64,7 @@ In our page layout we have two main goals:
 
 ### myscript.js
 Our createChart functions takes a specifically formatted table, prepares the data, and then uses the Chart.js library to build our line plot. We expect the input dataset to have specific column names and be ordered by series and then x label. Here's a small sample of our input for our example line chart.
+
 |srs|x|y|label_chart|label_x|label_y| 
 |--|--|--|--|--|--|
 |RG01 |2010-01-31 | 7.82 |Monthly Inches of Rain Across Seattle |        |Inches of Rain|
@@ -72,6 +73,7 @@ Our createChart functions takes a specifically formatted table, prepares the dat
 |RG02 |2010-01-31 | 6.41 |Monthly Inches of Rain Across Seattle |        |Inches of Rain|
 |RG02 |2010-02-28 | 2.83 |Monthly Inches of Rain Across Seattle |        |Inches of Rain|
 |RG02 |2010-03-31 | 3.10 |Monthly Inches of Rain Across Seattle |        |Inches of Rain|
+
 
 ```javascript
 //Function that is called in our HTML file
