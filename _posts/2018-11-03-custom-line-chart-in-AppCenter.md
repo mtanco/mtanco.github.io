@@ -20,8 +20,8 @@ There are 4 main types of files we will need to create our custom visualization:
 
  1. Any custom styling
  2. A page layout to hold our visualization
- 3. A script that takes the results of a SQL Select statement as input, formats the data, and calls the Chart.js functions we are interested in using
- 4. Any scripts that we are using to visualize
+ 3. A script that takes the results of a SQL Select statement as input, formats the data, and calls the visualization libraries we're using
+ 4. Any libraries that we are using to visualize
 
 ### External Libraries We're Using
 
@@ -42,6 +42,7 @@ In our page layout we have two main goals:
  - Import our style sheet and any scripts we will be using
  - Save our SQL query results as the variable **dataObjStr**
  - Call our **createChart** function (which we will build in the next script)
+ 
 ```html
 <html>
     <header>
@@ -60,6 +61,7 @@ In our page layout we have two main goals:
     </body>
 </html>
 ```
+
 ### myscript.js
 Our createChart functions takes a specifically formatted table, prepares the data, and then uses the Chart.js library to build our line plot. We expect the input dataset to have specific column names and be ordered by series and then x label. Here's a small sample of our input for our example line chart.
 |srs|x|y|label_chart|label_x|label_y| 
