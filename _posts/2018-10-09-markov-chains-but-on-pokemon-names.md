@@ -1,6 +1,15 @@
+Last week, I had that thing happen where you’re falling asleep, semi-conscious, and then, all of a sudden, you have a GREAT IDEA. I diligently recorded it and then promptly passed out. In the morning, I learned that my SUPER GOOD IDEA was “Markov Chains, but on Pokémon names”.
+
+Which… rhymes so that's cool. I had recently reread the iconic [Tweet Like the President](https://www.kaggle.com/naldershof/tweet-like-the-president-simple-markov) blog post and my subconscious was clearly inspired.
+
+The more I thought about it, the more the idea grew on me. Yes, it’s silly, but the process can be applied to business cases such as segmenting new customers. And thus, the post you’re currently reading. In this post we will use python to:
+* Build a Markov Chain of letters for each of the seven Pokémon generations
+* For each Pokémon, find the model it fits best in
+* Compare our predictions to actual generations
+* Invent some new Pokémon
+* Determine what generation I would be from if I were a Pokémon
 
 ### Import Needed Libraries 
-
 
 ```python
 import numpy as np
@@ -254,7 +263,6 @@ all_pokemon.head(5)
 
 ## Build a Markov Chain
 
-This is based off of https://www.kaggle.com/naldershof/tweet-like-the-president-simple-markov
 We build a function that takes a series of strings and builds a dictionary of each letter and all letters that follow it - including the end of the word. While looping through the data, we also collect a list of starting letters and get the longest and shortest name.
 
 
@@ -504,7 +512,7 @@ all_pokemon['prediction'] = all_pokemon.apply(predicted_generation, axis=1)
 
 #### We've Got Impressive Results!
 
-If we were to just guess the generation randomly, we would expect accuracies of ~1/7 or 14%. We know that we are giving the models a big advantage by training and testing on the same data. Even so, our prediction results are much much better than 14%. It's tempting to then claim that the names of Pokémon really did change from season to season, we proved it! And yes, there were some changes like loner names and more dashes. However, our training data sets are so tiny that we definitely just have over fitted models :) 
+If we were to just guess the generation randomly, we would expect accuracies of ~1/7 or 14%. We know that we are giving the models a big advantage by training and testing on the same data. Even so, our prediction results are much much better than 14%. It's tempting to then claim that the names of Pokémon really did change from season to season, we proved it! And yes, there were some changes like longer names and more dashes. However, our training data sets are so tiny that we definitely just have over fitted models :) 
 
 
 ```python
