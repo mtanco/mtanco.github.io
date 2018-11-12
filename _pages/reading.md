@@ -8,14 +8,14 @@ redirect_from:
 
 ***
 
-# Current Reading List
+## Current Reading List
 
 * How to Teach Phyisics to Your Dog - Chad Orzel
 * Deception Point - Dan Brown
 
 ***
 
-# Read as of November 2018
+## Read as of November 2018
 
 * The Perks of Being a Wallflower - Stephen Chbosky
 * Read and Riot - Nadya Tolokonnikova

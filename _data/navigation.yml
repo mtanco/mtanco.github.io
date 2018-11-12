@@ -18,11 +18,13 @@ main:
 #  - title: "Portfolio"
 #    url: /portfolio/
 
-#  - title: "Resume"
-#    url: /resume/
+
 
 #  - title: "Guide"
 #    url: /markdown/
 
   - title: "Reading List"
     url: /reading/
+    
+  - title: "Resume"
+    url: /resume/
