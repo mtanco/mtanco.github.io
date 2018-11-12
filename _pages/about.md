@@ -1,7 +1,7 @@
 ---
 permalink: /
 #layout: archive
-title: "Welcome to Michelle's Brain"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from:
