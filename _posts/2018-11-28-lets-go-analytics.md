@@ -1,5 +1,7 @@
 It's been about 2 weeks since the latest Pokémon game release and let me tell you, it's amazing. In this version of the classic RPG we are back in pallet town, a remake of the original games. Pokémon Let's Go: Eevee & Pikachu are amazing, but you don't have to take my word for it. Let's go ask the good people of Twitter dot com. 
 
+![](/images/pokemon_teaser.jpg)
+
 ## Pulling Tweets
 We're going to use the RTweet package to pull tweets that use one of the three hashtags: #PokemonLet'sGo, #TeamEeve, #TeamPikachu
 
