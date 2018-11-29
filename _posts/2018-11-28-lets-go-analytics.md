@@ -65,7 +65,6 @@ ggplot(data = tm_grp, aes(x = as.POSIXct(Var1), y =Freq)) +
 ```
 ![](/images/pokemon_tweets_over_time.PNG)
 
-As expected, lots of reference to Pikachu, Eevee, and shinies (rare colored critters that show up some times). The large number of Nintendo related tags come from people who tweet directly from the game, which is played on the Nintendo Switch and forces its own hashtag.
 
 ## Word Clouds of Hashtags
 Yes yes yes I know, word clouds are this generation's Comic Sans. But they are a quick and easy way to see common words, so we're going for it. 
@@ -90,6 +89,8 @@ pokeTags <- poke_tbl %>%
   filter(n > 10)
 ```
 ![](/images/pokemon_hashtag_wordcloud.png)
+
+As expected, lots of reference to Pikachu, Eevee, and shinies (rare colored critters that show up some times). The large number of Nintendo related tags come from people who tweet directly from the game, which is played on the Nintendo Switch and forces its own hashtag.
 
 ## What's Next
 So far we have done some preliminary exploring and visualizing of our data set. No we haven't done any Machine Learning or model building, but we have a comfortable idea of what's in our dataset and what types of things we could use it to figure out. In the next post(s) we'll look at:
