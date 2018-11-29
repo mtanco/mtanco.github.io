@@ -41,7 +41,7 @@ The RTweet package comes with a nifty function called ts_plot which will allow u
 ```r
 ts_plot(poke_tbl,"hour")
 ```
-![](/images/pokemon_tweets_over_time1.png)
+![](/images/pokemon_tweets_over_time_1.PNG)
 
 We can quickly see that even though we asked Twitter for 1 MILLION TWEETS, we did not get all tweets.  The release date was November 16th but our earliest tweets are the 18th. We also see there is a steady decline as the hype dies down.
 
@@ -63,8 +63,9 @@ ggplot(data = tm_grp, aes(x = as.POSIXct(Var1), y =Freq)) +
   )
 
 ```
+![](/images/pokemon_tweets_over_time.PNG)
 
-![](/images/pokemon_tweets_over_time.png)
+As expected, lots of reference to Pikachu, Eevee, and shinies (rare colored critters that show up some times). The large number of Nintendo related tags come from people who tweet directly from the game, which is played on the Nintendo Switch and forces its own hashtag.
 
 ## Word Clouds of Hashtags
 Yes yes yes I know, word clouds are this generation's Comic Sans. But they are a quick and easy way to see common words, so we're going for it. 
@@ -98,3 +99,4 @@ So far we have done some preliminary exploring and visualizing of our data set. 
  - What are the topics of tweets?
  - Are the people tweeting about Let's Go "gamers"? Do they normally tweet about games, or is this new for them?
  - What are the most popular tweets?
+ - Which shiny pokes are being found (or at least tweeted about) the most?
