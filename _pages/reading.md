@@ -10,7 +10,7 @@ redirect_from:
 
 ## Current Reading List
 
-* How to Teach Phyisics to Your Dog - Chad Orzel
+* How Do We Look - Mary Beard
 
 ***
 
@@ -22,5 +22,7 @@ redirect_from:
 * There's No Such Thing as Bad Weather - Linda Akeson McGurk
 * [Forecasting: Principles and Practice - Rob J Hyndman and George Athanasopoulos](https://otexts.org/fpp2/)
 
+## Books I Didn't Finish because Library Fines...
+I really need to stop doing this, maybe the guilt of putting them here will help
 
-
+* How to Teach Phyisics to Your Dog - Chad Orzel
