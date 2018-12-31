@@ -6,47 +6,36 @@ redirect_from:
   - /resume
 ---
 
-***
+### Analytic Projects
 
-## Education
+*Coming Soon*
+
+### Presentations & Publications
+
+- Teradata Analytics Universe 2018: Visualizing and Leveraging Multi Genre Advanced Analytics in Vantage
+- Teradata Analytics Universe 2018: A New Take on an Old Problem: How eBay is Reducing Call Center Buyer Churn
+- Teradata Analytics Universe 2018: What's the Business Value of My Data?
+- Teradata Partners 2017: Visualizing and Leveraging Multi Genre Advanced Analytics 
+- Teradata Partners 2016: Leveraging Multi Genre Advanced Analytics (TM) for Data Science Projects
+- Teradata Partners 2015: Analyzing an Analytics Conference: Getting Your Hands On Data Discovery
+- Akshaye Dhawan, Michelle Tanco and Aaron Yeiser, "Randomized Algorithms for Approximating a Connected Dominating Set in Wireless Sensor Networks", 2015 IEEE International Conference on Computing and Network Communications (CoCoNET), December, 2015. 
+- Akshaye Dhawan, Michelle Tanco, Nicholas Scoville, "A Distributed Greedy Algorithm for Constructing Connected Dominating Sets in Wireless Sensor Networks", 3rd International Conference on Sensor Networks (SENSORNETS), Lisbon, Portugal, January, 2014. 
+
+### Education
 
 **Ursinus College**, B.S. in Mathematics & Computer Science (2014)   
-Auburn Mountainview High School, Auburn, WA (2010)
 
-### Key Courses
+#### Key Courses
 
-*	_Math_: Linear Algebra 1 & 2, Discrete Math, Graph Theory, Topology
-*	_Data Warehousing_: Database Design, Teradata Factory, Teradata Implementation Workshop
 *	_Analytics & Data Science_: Aster Analytics Workshop, R Programming, Python for Machine Learning, Advanced AI: Deep Reinforcement Learning, Convolutional Neural Nets
 *	_Computer Science_: Computer Architecture, Theory of Computation, OS, Computer Networks
-*	_Open Source_: Using Python to Access Web Data, From Hype to Business Results, Apache Hadoop Essentials, Apache Pig and Hive
+*	_Math_: Linear Algebra 1 & 2, Discrete Math, Graph Theory, Topology
+*	_Data Warehousing_: Database Design, Teradata Factory, Teradata Implementation Workshop
+*	_Open Source Technologies_: Using Python to Access Web Data, From Hype to Business Results, Apache Hadoop Essentials, Apache Pig and Hive
 *	_Consulting Development_: Presentation Skills Workshop, RACE, ICE Foundations in Consulting
 *	_Software Development_: Object-Oriented Programming, Software Engineering, Algorithms
 
-***
-
-## PRESENTATIONS & PUBLICATIONS	
-
-*	Teradata Analytics Universe 2018: Visualizing and Leveraging Multi Genre Advanced Analytics in Vantage
-
-*	Teradata Analytics Universe 2018: A New Take on an Old Problem: How eBay is Reducing Call Center Buyer Churn
-
-*	Teradata Analytics Universe 2018: What's the Business Value of My Data?
-
-*	Teradata Partners 2017: Visualizing and Leveraging Multi Genre Advanced Analytics 
-
-*	Teradata Partners 2016: Leveraging Multi Genre Advanced Analytics (TM) for Data Science Projects
-
-*	Teradata Partners 2015: Analyzing an Analytics Conference: Getting Your Hands On Data Discovery
-
-* Akshaye Dhawan, Michelle Tanco and Aaron Yeiser, "Randomized Algorithms for Approximating a Connected Dominating Set in Wireless Sensor Networks", 2015 IEEE International Conference on Computing and Network Communications (CoCoNET), December, 2015. 
-
-* Akshaye Dhawan, Michelle Tanco, Nicholas Scoville, "A Distributed Greedy Algorithm for Constructing Connected Dominating Sets in Wireless Sensor Networks", 3rd International Conference on Sensor Networks (SENSORNETS), Lisbon, Portugal, January, 2014. 
-
-
-***
-
-## Honors & Awards
+### Honors & Awards
 
 * Consulting Excellence - Feburary 2018 - Teradata
 
