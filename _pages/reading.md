@@ -8,11 +8,14 @@ redirect_from:
 
 ### Current Reading List
 
-* 
+* Gone Girl - Gillian Flynn
 
 ### 2019 Read List
 
-* 
+* Numsense! - Annalyn Ng and Kenneth Soo
+* Over Maya Dead Body - Sandra Orchard
+* Another Day Another Dali - Sandra Orchard
+* A Fool & His Monet - Sandra Orchard
 
 ### Winter 2018 Read List
 
@@ -24,9 +27,3 @@ redirect_from:
 * There's No Such Thing as Bad Weather - Linda Akeson McGurk
 * [Forecasting: Principles and Practice - Rob J Hyndman and George Athanasopoulos](https://otexts.org/fpp2/)
 
-### Failed Winter 2018 List
-
-I'm super good at checking out library books, reading half of them, forgetting about and never finishing them, and then still having late fees. This list is in hopes that I'll guilt myself into breaking this habit.
-
-* How to Teach Phyisics to Your Dog - Chad Orzel
-* How Do We Look - Mary Beard
