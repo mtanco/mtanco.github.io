@@ -8,10 +8,11 @@ redirect_from:
 
 ### Current Reading List
 
-* Gone Girl - Gillian Flynn
+
 
 ### 2019 Read List
 
+* Gone Girl - Gillian Flynn
 * Numsense! - Annalyn Ng and Kenneth Soo
 * Over Maya Dead Body - Sandra Orchard
 * Another Day Another Dali - Sandra Orchard

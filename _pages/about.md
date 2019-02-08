@@ -11,14 +11,16 @@ redirect_from:
 
 Hi! I'm Michelle and I like to solve problems. 
 
-I **work** as a Senior Consultant for [Teradata](https://www.teradata.com/) in our Data Science Deliveries team. This often means I'm either galavanting accross the US or holed up in my home office, working with our customers to derive business value out of their data. The sorts of projects I've been focused on recently are:
+I **work** as Customer Solution Engineer and Data Scientist at H2o.ai. As it's my first week this mostly means I am drinking H2O from the fire hose and learning everything I possibly can :)
+
+Previously, I was a Senior Consultant for [Teradata](https://www.teradata.com/) in the Data Science Deliveries team. The sorts of projects I've been focused on recently are:
 
 * Network optimization
 * Predictive asset maintenance 
 * Event prediction in time series data
 * Cross channel customer engagement 
 
-I tend to **play** by coding and tinkering. The main point of this site to host the output of these fun, personal projects. 
+I tend to **play** by coding and tinkering. The main point of this site to host the output of my learning and personal projects. 
 
 Outside of the computer, my main hobbies are spending time with my **dog & husband**, playing **ukulele**, and flipping around at my adult **gymnastics** class. 
 
