@@ -6,11 +6,11 @@ redirect_from:
   - /reading
 ---
 
-### Current Reading List
+### Currently Reading
 
+* M Train - Patti Smith
 
-
-### 2019 Read List
+### 2019 Read
 
 * Gone Girl - Gillian Flynn
 * Numsense! - Annalyn Ng and Kenneth Soo
@@ -18,7 +18,7 @@ redirect_from:
 * Another Day Another Dali - Sandra Orchard
 * A Fool & His Monet - Sandra Orchard
 
-### Winter 2018 Read List
+### Winter 2018 Read
 
 * Rosemary and Crime - Gail Oust
 * Bella Figura - Kamin Mohammadi
