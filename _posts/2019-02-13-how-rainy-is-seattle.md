@@ -1,4 +1,4 @@
-My backyard received about 11" of snow these pass 4 days which is roughly 10.5 more inches than a normal February weekend. In honor of this unusually cold percipation (it is supposed to RAIN in Seattle...), let's predict the amount of rain per month for various locations around the Puget Sound. We'll use Driverless AI: H2O.ai's answer to automated Machine Learning. 
+My backyard received about 11" of snow these past 4 days which is roughly 10.5 more inches than a normal February weekend. In honor of this unusually cold percipation (it is supposed to RAIN in Seattle...), let's predict the amount of rain per month for various locations around the Puget Sound. We'll use Driverless AI: H2O.ai's answer to automated Machine Learning. 
 
 
 ```python
