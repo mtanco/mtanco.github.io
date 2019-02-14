@@ -11,7 +11,7 @@ redirect_from:
 
 Hi! I'm Michelle and I like to solve problems. 
 
-I **work** as Customer Solution Engineer and Data Scientist at H2o.ai. As it's my first week this mostly means I am drinking H2O from the fire hose and learning everything I possibly can :)
+I **work** as Customer Solution Engineer and Data Scientist at H2o.ai. As it's my first month this mostly means I am drinking H2O from the fire hose and learning everything I possibly can :)
 
 Previously, I was a Senior Consultant for [Teradata](https://www.teradata.com/) in the Data Science Deliveries team. The sorts of projects I've been focused on recently are:
 
