@@ -8,10 +8,10 @@ redirect_from:
 
 ### Currently Reading
 
-* M Train - Patti Smith
+* [Mathematics for Machine Learning - Marc Peter Deisenroth, A Aldo Faisal, and Cheng Soon Ong](https://mml-book.com)
 
 ### 2019 Read
-
+* M Train - Patti Smith
 * Gone Girl - Gillian Flynn
 * Numsense! - Annalyn Ng and Kenneth Soo
 * Over Maya Dead Body - Sandra Orchard
