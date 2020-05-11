@@ -9,8 +9,15 @@ Here's what I've been up to in Spring of 2020
 
 ## Books
 
+### Currently Reading
 * [A Beginners Guide to Python 3 Programming](https://link.springer.com/book/10.1007%2F978-3-030-20290-3)
     * Was available free on Springer for a while - a nice refresher on how the language works which I'm enjoying as someone that never formally learned the lanuage from anywhere other than StackOverflow
+* [Just Kids by Patti Smith](https://www.goodreads.com/book/show/341879.Just_Kids)
+    * In 2011, Patti Smith came to Ursinus College to give a talk - I went because of a boy, of course - and was absolutely transformed. My love of Lou Reed, Bob Dylan, the 70s come from this day. I read this book at the end of every year of college but haven't come back to it for a few years. Seems appropriate to revisit in this new time of transition as I take "summer break" from my tech  job to focus on the baby.
+
+### Finished
+
+### Abandoned 
 
 ## Movies
  * [Clue](https://en.wikipedia.org/wiki/Clue_(film))
