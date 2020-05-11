@@ -3,5 +3,5 @@ _site/
 *~
 .ipynb_checkpoints/*
 .ipynb_checkpoints
-
-Disease datasets list - data blog post.tsv
+.Rhistory
+.idea/*
