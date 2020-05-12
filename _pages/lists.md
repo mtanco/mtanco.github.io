@@ -20,9 +20,11 @@ Here's what I've been up to in Spring of 2020
 ### Abandoned 
 
 ## Movies
- * [Clue](https://en.wikipedia.org/wiki/Clue_(film))
+* [Fire Bringer](https://www.teamstarkid.com/firebringer)
+    * 🎵 I don't really want to do the work today 🎵
+* [Clue](https://en.wikipedia.org/wiki/Clue_(film))
     * Tim Curry is an absolute treasure and also Miss Scarlet is GOALS
- * [Star Wars: The Rise of Skywalker](https://en.wikipedia.org/wiki/Star_Wars:_The_Rise_of_Skywalker)
+* [Star Wars: The Rise of Skywalker](https://en.wikipedia.org/wiki/Star_Wars:_The_Rise_of_Skywalker)
     * Stay-at-home date night :) 
 
 ## Music
