@@ -13,13 +13,14 @@ Here's what I've been up to in Spring of 2020
 
 * [A Beginners Guide to Python 3 Programming](https://link.springer.com/book/10.1007%2F978-3-030-20290-3)
     * Was available free on Springer for a while - a nice refresher on how the language works which I'm enjoying as someone that never formally learned the lanuage from anywhere other than StackOverflow
-* [Yes, Please by Amy Poehler](https://www.goodreads.com/book/show/20910157-yes-please)
 
 
 ### Finished
 * [Just Kids by Patti Smith](https://www.goodreads.com/book/show/341879.Just_Kids)
     * In 2011, Patti Smith came to Ursinus College to give a talk - I went because of a boy, of course - and was absolutely transformed. My love of Lou Reed, Bob Dylan, the 70s come from this day. I read this book at the end of every year of college but haven't come back to it for a few years. Seems appropriate to revisit in this new time of transition as I take "summer break" from my tech  job to focus on the baby.
-
+* [Yes, Please by Amy Poehler](https://www.goodreads.com/book/show/20910157-yes-please)
+    * This was fun
+    
 ### Abandoned 
 
 ## Movies
@@ -35,21 +36,28 @@ Here's what I've been up to in Spring of 2020
 
 *See [this blog post](http://mtanco.github.io/recent-artists-list/) for how this list is generated*
 
-* [Patti Smith](https://open.spotify.com/artist/0vYkHhJ48Bs3jWcvZXvOrP)
-* [Saves The Day](https://open.spotify.com/artist/5gWhlJBlLQGLOgYWO8lwCU)
-* [The Unicorns](https://open.spotify.com/artist/7L5HH5QtkDe7u2hJ1FUKFo)
-* [Bob Dylan](https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX)
-* [Jack's Mannequin](https://open.spotify.com/artist/42aeGx2I3uXINpGqC8L0LD)
-* [Gorillaz](https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ)
-* [Blur](https://open.spotify.com/artist/7MhMgCo0Bl0Kukl93PZbYS)
-* [Fatoumata Diawara](https://open.spotify.com/artist/4G5ZJny3HvX6Il7eHVfnNC)
-* [Foster The People](https://open.spotify.com/artist/7gP3bB2nilZXLfPHJhMdvc)
-* [Interpol](https://open.spotify.com/artist/3WaJSfKnzc65VDgmj2zU8B)
-* [Jamie Principle](https://open.spotify.com/artist/5obQFNrkFoWB51hm1JTHMw)
-* [Radiohead](https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb)
-* [Snoop Dogg](https://open.spotify.com/artist/7hJcb9fa4alzcOq3EaNPoG)
+* [Snarky Puppy](https://open.spotify.com/artist/7ENzCHnmJUr20nUjoZ0zZ1)
 * [The Strokes](https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V)
-* [Veruca Salt](https://open.spotify.com/artist/2QwJQuBekTA4qF7N7uLHDP)
+* [Bikini Kill](https://open.spotify.com/artist/0gvHPdYxlU94W7V5MSIlFe)
+* [Becca Stevens](https://open.spotify.com/artist/0Sh2X6e3JerGnyEF0vDgbk)
+* [Michelle Willis](https://open.spotify.com/artist/2CgQstPV8fb7a4zCFWgPw0)
+* [Väsen](https://open.spotify.com/artist/1Njrx1AMU4ymWHjfSlwLpE)
+* [Tim Armstrong](https://open.spotify.com/artist/7v3ZMFl1E6X4isdEaOSnk3)
+* [They Might Be Giants](https://open.spotify.com/artist/6zB02lwP6L6ZH32nggQiJT)
+* [The Mighty Mighty Bosstones](https://open.spotify.com/artist/5uYXMC13cIUulobh204QuK)
+* [The Four Lads](https://open.spotify.com/artist/3stlWzoChlEtbdZAz6CNC3)
+* [Shayna Steele](https://open.spotify.com/artist/7tJc7ubifEnRE29FLtCHTE)
+* [Magda Giannikou](https://open.spotify.com/artist/2E2gPRKo4APVuw55BQelKc)
+* [Big Ed Lee](https://open.spotify.com/artist/2aONhZcjjeoqPlOkTVMnz6)
+* [Laura Mvula](https://open.spotify.com/artist/0Dy94lW3txJhWQHqNXP1BT)
+* [Lalah Hathaway](https://open.spotify.com/artist/0uNEy4544VZq2KOl7BsLuo)
+* [King Prawn](https://open.spotify.com/artist/1Fjm05W0fV3rvWRW3SFZY9)
+* [Jacob Collier](https://open.spotify.com/artist/0QWrMNukfcVOmgEU0FEDyD)
+* [Goldfinger](https://open.spotify.com/artist/7sVQKNtdP2NylxMgbNOJMM)
+* [Five Iron Frenzy](https://open.spotify.com/artist/1BcAEs4W94BrXMmVCOgwSx)
+* [Chantae Cann](https://open.spotify.com/artist/1cPLFQV7MAWQiaDW5SlUMR)
+* [We Are The Union](https://open.spotify.com/artist/4AAXAVOZ3fw7M8ILLrKLvs)
+
 
 
 ## Podcasts
