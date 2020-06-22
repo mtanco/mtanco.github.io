@@ -1,7 +1,10 @@
+# Spotify Recently Played List!
 
-I wanted to create a dynamically updated list of artists I've been listening to based on my recent Spotify play history. This blog post is a work in progress as I work on this project :) 
+I want to create a dynamicly updated list of artists I've been listening to based on my recent Spotify play history. This blog post is a work in progress as I work on this project :) 
 
-Currently I have a python script that pulls the last 50 songs I listened to from spotify and makes a list of the artists, ordered by number of songs. The output of the script is currently manually pasted into my `lists.md` page. 
+<h2>Table of Contents<span class="tocSkip"></span></h2>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Getting-Started" data-toc-modified-id="Getting-Started-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Getting Started</a></span></li><li><span><a href="#Autorization-Token" data-toc-modified-id="Autorization-Token-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Autorization Token</a></span></li><li><span><a href="#User-Play-History" data-toc-modified-id="User-Play-History-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>User Play History</a></span><ul class="toc-item"><li><span><a href="#Last-5-Songs-I-Listened-To" data-toc-modified-id="Last-5-Songs-I-Listened-To-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Last 5 Songs I Listened To</a></span></li><li><span><a href="#Last-Albums-I-Listened-To" data-toc-modified-id="Last-Albums-I-Listened-To-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Last Albums I Listened To</a></span></li></ul></li><li><span><a href="#Create-Markdown-of-Recent-Artists-for-Blog" data-toc-modified-id="Create-Markdown-of-Recent-Artists-for-Blog-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Create Markdown of Recent Artists for Blog</a></span></li></ul></div>
+
 
 ```python
 from spotipy import util
@@ -33,24 +36,18 @@ You will then be asked to log in to spotify (from a new webpage) and approve aut
 
 
 ```python
-util.prompt_for_user_token(username="1238655357",
-                           scope="user-read-recently-played",
-                           redirect_uri='https://www.getpostman.com/oauth2/callback')
+# Get authorization token for this user - resfreshes or asks for permission as needed
+my_token = util.prompt_for_user_token(username="1238655357", # Michelle's ID
+                                      scope="user-read-recently-played", # allows us to see recently played songs
+                                      redirect_uri="http://127.0.0.1:12345") # URL in our app
 ```
-
-
-```python
-recent_play_token = getpass.getpass("Enter Your Token:")
-```
-
-    Enter Your Token:········
-
 
 ## User Play History
 
 
 ```python
-spotify = Spotify(auth=recent_play_token)
+# Object for interacting with spotify user
+spotify = Spotify(auth=my_token)
 ```
 
 ### Last 5 Songs I Listened To
@@ -69,9 +66,9 @@ for s in last_songs_dict:
                                                   s['played_at']]]))
 
 last_songs = last_songs.reset_index(drop=True)
-last_songs.columns = ["track_name", "artist_name", "album_title", "play_time"]
+last_songs.columns = ["song", "artist", "album", "timestamp"]
 
-last_songs["play_time"] = pd.to_datetime(last_songs["play_time"])
+last_songs["timestamp"] = pd.to_datetime(last_songs["timestamp"])
 
 last_songs
 ```
@@ -97,47 +94,47 @@ last_songs
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>track_name</th>
-      <th>artist_name</th>
-      <th>album_title</th>
-      <th>play_time</th>
+      <th>song</th>
+      <th>artist</th>
+      <th>album</th>
+      <th>timestamp</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Let's Get Known</td>
-      <td>The Unicorns</td>
-      <td>Who Will Cut Our Hair When We're Gone? (Remast...</td>
-      <td>2020-05-13 00:14:31.853000+00:00</td>
+      <td>Desire (Setare)</td>
+      <td>Bahramji &amp; Mashti</td>
+      <td>Sufiyan</td>
+      <td>2020-06-21 19:04:55.209000+00:00</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Child Star</td>
-      <td>The Unicorns</td>
-      <td>Who Will Cut Our Hair When We're Gone? (Remast...</td>
-      <td>2020-05-11 22:36:04.881000+00:00</td>
+      <td>Om Tara Tuttare [Red Fulka Remix]</td>
+      <td>Deva Premal</td>
+      <td>Yoga Revolution</td>
+      <td>2020-06-21 18:59:35.427000+00:00</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>The Clap</td>
-      <td>The Unicorns</td>
-      <td>Who Will Cut Our Hair When We're Gone? (Remast...</td>
-      <td>2020-05-11 22:30:42.982000+00:00</td>
+      <td>Destiny</td>
+      <td>Zero 7</td>
+      <td>Simple Things</td>
+      <td>2020-06-21 18:54:44.004000+00:00</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Jellybones</td>
-      <td>The Unicorns</td>
-      <td>Who Will Cut Our Hair When We're Gone? (Remast...</td>
-      <td>2020-05-11 22:29:16.240000+00:00</td>
+      <td>Karma Shabda</td>
+      <td>No Noise</td>
+      <td>Chakra Lounge Vol. 1</td>
+      <td>2020-06-21 18:49:05.679000+00:00</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Sea Ghost</td>
-      <td>The Unicorns</td>
-      <td>Who Will Cut Our Hair When We're Gone? (Remast...</td>
-      <td>2020-05-11 22:26:32.334000+00:00</td>
+      <td>An Ending, a Beginning</td>
+      <td>Dustin O'Halloran</td>
+      <td>Other Lights</td>
+      <td>2020-06-21 18:43:58.726000+00:00</td>
     </tr>
   </tbody>
 </table>
@@ -159,12 +156,12 @@ for s in last_songs_dict:
                                                       s["track"]["artists"][0]["uri"],
                                                       s['track']['album']['name']]]))
 
-last_albumns.columns = ["artist_name", "artist_uri", "album_title"]
+#last_albumns.columns = ["artist", "spotify_uri", "album"]
 
-last_albumns = last_albumns.drop_duplicates()
-last_albumns = last_albumns.reset_index(drop=True)
+last_albumn_counts = last_albumns.groupby(last_albumns.columns.tolist()).size().reset_index(name ='')
+last_albumn_counts.columns = ["artist", "spotify_uri", "album", "song_count"]
 
-last_albumns
+last_albumn_counts.head(10)
 ```
 
 
@@ -188,89 +185,82 @@ last_albumns
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>artist_name</th>
-      <th>artist_uri</th>
-      <th>album_title</th>
+      <th>artist</th>
+      <th>spotify_uri</th>
+      <th>album</th>
+      <th>song_count</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>The Unicorns</td>
-      <td>spotify:artist:7L5HH5QtkDe7u2hJ1FUKFo</td>
-      <td>Who Will Cut Our Hair When We're Gone? (Remast...</td>
+      <td>Bahramji &amp; Mashti</td>
+      <td>spotify:artist:7JWJ86duJuQx2rcch6ZDf2</td>
+      <td>Sufiyan</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Saves The Day</td>
-      <td>spotify:artist:5gWhlJBlLQGLOgYWO8lwCU</td>
-      <td>Stay What You Are</td>
+      <td>DJ Drez</td>
+      <td>spotify:artist:5j3iObqG7iT7utWpTTmC7F</td>
+      <td>Jahta Beat: The Lotus Memoirs</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Patti Smith</td>
-      <td>spotify:artist:0vYkHhJ48Bs3jWcvZXvOrP</td>
-      <td>Horses (Legacy Edition)</td>
+      <td>Deva Premal</td>
+      <td>spotify:artist:2970BxpdOBQmkMit6i9kVF</td>
+      <td>Yoga Revolution</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Bob Dylan</td>
-      <td>spotify:artist:74ASZWbe4lXaubB36ztrGX</td>
-      <td>Highway 61 Revisited</td>
+      <td>Dillon Reznick</td>
+      <td>spotify:artist:6lHuJXIBBEw0n9qOmiWWJY</td>
+      <td>Lay Your Head on My Shoulder</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Veruca Salt</td>
-      <td>spotify:artist:2QwJQuBekTA4qF7N7uLHDP</td>
-      <td>Eight Arms To Hold You</td>
+      <td>Dustin O'Halloran</td>
+      <td>spotify:artist:6UEYawMcp2M4JFoXVOtZEq</td>
+      <td>Other Lights</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Jack's Mannequin</td>
-      <td>spotify:artist:42aeGx2I3uXINpGqC8L0LD</td>
-      <td>Everything In Transit</td>
+      <td>East Forest</td>
+      <td>spotify:artist:0okmfBroVgFuvvljnUbqPW</td>
+      <td>The Education Of The Individual Soul</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Gorillaz</td>
-      <td>spotify:artist:3AA28KZvwAUcZuOKwyblJQ</td>
-      <td>The Now Now</td>
+      <td>Egil Nielsen</td>
+      <td>spotify:artist:0oZuyZXAZ8zvY3ygyApIHf</td>
+      <td>A Goodnight Lullaby</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Radiohead</td>
-      <td>spotify:artist:4Z8W4fKeB5YxbusRsdQVPb</td>
-      <td>OK Computer</td>
+      <td>Felix Scott</td>
+      <td>spotify:artist:52P6o31sXSSZBcTHwveYx8</td>
+      <td>The More We Get Together</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Foster The People</td>
-      <td>spotify:artist:7gP3bB2nilZXLfPHJhMdvc</td>
-      <td>Torches</td>
+      <td>Howard Peele</td>
+      <td>spotify:artist:6pIayvI5bDeyEhT5x7LTTe</td>
+      <td>Beauty and the Beast</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>The Strokes</td>
-      <td>spotify:artist:0epOFNiUfyON9EYx7Tpr6V</td>
-      <td>The New Abnormal</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Gorillaz</td>
-      <td>spotify:artist:3AA28KZvwAUcZuOKwyblJQ</td>
-      <td>Song Machine Episode 2</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Blur</td>
-      <td>spotify:artist:7MhMgCo0Bl0Kukl93PZbYS</td>
-      <td>Blur [Special Edition]</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Interpol</td>
-      <td>spotify:artist:3WaJSfKnzc65VDgmj2zU8B</td>
-      <td>Our Love To Admire</td>
+      <td>Jesse Nielsen</td>
+      <td>spotify:artist:28hL1CMeKSmGDu43cUqsWW</td>
+      <td>Lullabies on Music Box</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -278,20 +268,65 @@ last_albumns
 
 
 
+## Genres of Recent Artists
+
+
+```python
+# get dictionary of songs from recent listening
+last_songs_dict = spotify.current_user_recently_played()['items']
+
+genre_counts = dict()
+
+# each song
+for s in last_songs_dict:
+    
+    # each artist involved in the song
+    for a in s["track"]["artists"]:
+        artist_uri = a["uri"]
+    
+        genres = spotify.artist(artist_uri)['genres']
+        
+        # each genre associated with the artist
+        for i in genres:
+            genre_counts[i] = genre_counts.get(i, 0) + 1
+
+genre_counts = pd.DataFrame(list(genre_counts.items()),columns = ['genre','count']) 
+genre_counts = genre_counts.sort_values("count", ascending=False)
+
+top_10 = genre_counts["genre"].head(10)
+
+for g in top_10:
+    print("*", g)
+```
+
+    * chanson
+    * vintage schlager
+    * torch song
+    * shamanic
+    * kirtan
+    * calming instrumental
+    * healing
+    * downtempo
+    * world fusion
+    * meditation
+
+
 ## Create Markdown of Recent Artists for Blog
 Someday, we will want this dynamic, but for now here is the script to create the markdown for our recently listened to artists
 
 
 ```python
+# list of last 50 songs
 last_songs_dict = spotify.current_user_recently_played()['items']
 
+# frame to hold artists
 artists = pd.DataFrame()
 
-# Look at each track
+# Get information for all tracks
 for s in last_songs_dict:
     # Look at each artist that contributed to the track
     for a in s['track']['artists']:
-        
+
         # save artist name, spotify reference uri, and link to their spotify page
         artists = artists.append(pd.DataFrame([[
             a["name"], a["uri"], a["external_urls"]["spotify"]
@@ -304,29 +339,57 @@ artist_counts = artists.groupby(["artist_name", "artist_uri", "artist_page"]).si
 artist_counts.columns = ["artist_name", "artist_uri", "artist_page", "song_count"]
 
 for i, r in artist_counts.sort_values("song_count", ascending=False).iterrows():
-    print("* [" + r["artist_name"] + "](" + r["artist_page"] +")")
+    print("* [" + r["artist_name"] + "](" + r["artist_page"] + ")")
 ```
 
-    * [Patti Smith](https://open.spotify.com/artist/0vYkHhJ48Bs3jWcvZXvOrP)
-    * [Saves The Day](https://open.spotify.com/artist/5gWhlJBlLQGLOgYWO8lwCU)
-    * [The Unicorns](https://open.spotify.com/artist/7L5HH5QtkDe7u2hJ1FUKFo)
-    * [Bob Dylan](https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX)
-    * [Jack's Mannequin](https://open.spotify.com/artist/42aeGx2I3uXINpGqC8L0LD)
-    * [Gorillaz](https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ)
-    * [Blur](https://open.spotify.com/artist/7MhMgCo0Bl0Kukl93PZbYS)
-    * [Fatoumata Diawara](https://open.spotify.com/artist/4G5ZJny3HvX6Il7eHVfnNC)
-    * [Foster The People](https://open.spotify.com/artist/7gP3bB2nilZXLfPHJhMdvc)
-    * [Interpol](https://open.spotify.com/artist/3WaJSfKnzc65VDgmj2zU8B)
-    * [Jamie Principle](https://open.spotify.com/artist/5obQFNrkFoWB51hm1JTHMw)
-    * [Radiohead](https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb)
-    * [Snoop Dogg](https://open.spotify.com/artist/7hJcb9fa4alzcOq3EaNPoG)
-    * [The Strokes](https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V)
-    * [Veruca Salt](https://open.spotify.com/artist/2QwJQuBekTA4qF7N7uLHDP)
+    * [Édith Piaf](https://open.spotify.com/artist/1WPcVNert9hn7mHsPKDn7j)
+    * [Egil Nielsen](https://open.spotify.com/artist/0oZuyZXAZ8zvY3ygyApIHf)
+    * [Ramona Singh](https://open.spotify.com/artist/3MJdWvzpiIvIjvZFwqpTR1)
+    * [Ray Mondo](https://open.spotify.com/artist/5Di3vQR47VLSQn0JfAU0AZ)
+    * [Robin Swan](https://open.spotify.com/artist/6Di4ALvMopgtmvPy6qzoC7)
+    * [Jesse Nielsen](https://open.spotify.com/artist/28hL1CMeKSmGDu43cUqsWW)
+    * [Julio Menzel](https://open.spotify.com/artist/68VsLtvEAEljBp5OAXOpCL)
+    * [East Forest](https://open.spotify.com/artist/0okmfBroVgFuvvljnUbqPW)
+    * [The xx](https://open.spotify.com/artist/3iOvXCl6edW5Um0fXEBRXy)
+    * [The Baby Orchestra](https://open.spotify.com/artist/0yPT8hhJnDIpGqedGNyiji)
+    * [Stephen Rossi](https://open.spotify.com/artist/3GaNCXDzlQMgcBLTxkHLWW)
+    * [Peter Ehrlichmann](https://open.spotify.com/artist/4i2t5SSw1MoiBLrD1Lrslx)
+    * [Stefan Holmes](https://open.spotify.com/artist/6m0cGvFoQaNv9sZwELfceb)
+    * [Sophie Eichmann](https://open.spotify.com/artist/2kzsfr4PAIwyoSPrBq9Xdx)
+    * [Sophie Barker](https://open.spotify.com/artist/5338nAeek8WVCOPNnT7Qv2)
+    * [Sia](https://open.spotify.com/artist/5WUlDfRSoLAfcVSX1WnrxN)
+    * [Torben Overgaard](https://open.spotify.com/artist/2wrZRfjoJ5N3f1WyYjbKXL)
+    * [Riff's Tunes](https://open.spotify.com/artist/6E1XgE6zuMPt2Tm92Yrl3A)
+    * [Tristian Fitzmaurice](https://open.spotify.com/artist/19kUkTgm6469j8Pp2BKyav)
+    * [Zero 7](https://open.spotify.com/artist/14H7ag1wpQOsPPQJOD6Dqr)
+    * [Ralph Aachen](https://open.spotify.com/artist/0dJtjZpWliouisclYavoGF)
+    * [Power Music Workout](https://open.spotify.com/artist/3GghVvugpv9nXQ2YFzZNzN)
+    * [Phaeleh](https://open.spotify.com/artist/5NkUpXWkeXspvu7iQQOHhP)
+    * [Bahramji & Mashti](https://open.spotify.com/artist/7JWJ86duJuQx2rcch6ZDf2)
+    * [No Noise](https://open.spotify.com/artist/6LGoAumoBmeQ7cdGn5VTTD)
+    * [Kodomo](https://open.spotify.com/artist/57BliIwnAIqKeI4dbAWwaU)
+    * [Deva Premal](https://open.spotify.com/artist/2970BxpdOBQmkMit6i9kVF)
+    * [Dillon Reznick](https://open.spotify.com/artist/6lHuJXIBBEw0n9qOmiWWJY)
+    * [Dustin O'Halloran](https://open.spotify.com/artist/6UEYawMcp2M4JFoXVOtZEq)
+    * [Felix Scott](https://open.spotify.com/artist/52P6o31sXSSZBcTHwveYx8)
+    * [Howard Peele](https://open.spotify.com/artist/6pIayvI5bDeyEhT5x7LTTe)
+    * [John B. Lund](https://open.spotify.com/artist/7aeRsfmuN284l1Hs1eyVbW)
+    * [Khruangbin](https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk)
+    * [Lenox Martin](https://open.spotify.com/artist/472Cau4ZzDrfQR8Xwm4arw)
+    * [Musicbox Moments](https://open.spotify.com/artist/0nU5Dw03W7guh3qOjxJ4zC)
+    * [Les Compagnons De La Chanson](https://open.spotify.com/artist/0tqfplArnNaPnE2AkNIglR)
+    * [Luana Dias Araujo](https://open.spotify.com/artist/7s8KvVp5I0zZ48PSCxjwVF)
+    * [MC YOGI](https://open.spotify.com/artist/4dkPtsX0xVdn8gZmdMdFuk)
+    * [Martha Blackburn](https://open.spotify.com/artist/0YHFM04rfc7pNp63NLvswp)
+    * [Martin Grenelle](https://open.spotify.com/artist/7oBwDTaXpreH9jqXxtH2VP)
+    * [Mingmei Hsueh](https://open.spotify.com/artist/2Z1JaXCxqUBOH0Zm2Eyrxq)
+    * [DJ Drez](https://open.spotify.com/artist/5j3iObqG7iT7utWpTTmC7F)
+    * [Miten](https://open.spotify.com/artist/4jrXM6oLQfV9L458Luwc3P)
 
 
 ## Final Python Script
 
-`./<FILE_NAME.py> $SPOTIFY_TOKEN`
+`./<FILE_NAME.py>`
 
 ```python
 #!/usr/local/bin/python3
@@ -334,24 +397,29 @@ for i, r in artist_counts.sort_values("song_count", ascending=False).iterrows():
 # Create Markdown of Spotify Play History
 
 from spotipy import Spotify
+from spotipy import util
 import pandas as pd
-import sys
 
-if len(sys.argv) < 2:
-    print("Please include your Spotify Token!")
-    print("./<file_name.py> $SPOTIFY_TOKEN")
-    sys.exit
+# Get authorization token for this user - resfreshes or asks for permission as needed
+my_token = util.prompt_for_user_token(username="1238655357", # Michelle's ID
+                                      scope="user-read-recently-played", # allows us to see recently played songs
+                                      redirect_uri="http://127.0.0.1:12345") # URL in our app
 
-spotify = Spotify(auth=str(sys.argv[1]))
+# Object for interacting with spotify user
+spotify = Spotify(auth=my_token)
 
+# list of last 50 songs
 last_songs_dict = spotify.current_user_recently_played()['items']
 
+print("*** MARKDOWN LIST OF ARTISTS WITH LINKS ***")
+# frame to hold artists
 artists = pd.DataFrame()
 
-# Look at each track
+# Get information for all tracks
 for s in last_songs_dict:
     # Look at each artist that contributed to the track
     for a in s['track']['artists']:
+
         # save artist name, spotify reference uri, and link to their spotify page
         artists = artists.append(pd.DataFrame([[
             a["name"], a["uri"], a["external_urls"]["spotify"]
@@ -366,5 +434,35 @@ artist_counts.columns = ["artist_name", "artist_uri", "artist_page", "song_count
 for i, r in artist_counts.sort_values("song_count", ascending=False).iterrows():
     print("* [" + r["artist_name"] + "](" + r["artist_page"] + ")")
 
+
+# get the genres I've been listening to the most
+print("\n\n *** MARKDOWN LIST OF MOST COMMON GENRES ***")
+
+genre_counts = dict()
+
+# each song
+for s in last_songs_dict:
+
+    # each artist involved in the song
+    for a in s["track"]["artists"]:
+        artist_uri = a["uri"]
+
+        genres = spotify.artist(artist_uri)['genres']
+
+        # each genre associated with the artist
+        for i in genres:
+            genre_counts[i] = genre_counts.get(i, 0) + 1
+
+genre_counts = pd.DataFrame(list(genre_counts.items()), columns=['genre', 'count'])
+genre_counts = genre_counts.sort_values("count", ascending=False)
+
+top_10 = genre_counts["genre"].head(10)
+
+for g in top_10:
+    print("*", g)
 ```
 
+
+```python
+
+```

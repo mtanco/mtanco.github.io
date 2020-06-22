@@ -17,6 +17,7 @@ spotify = Spotify(auth=my_token)
 # list of last 50 songs
 last_songs_dict = spotify.current_user_recently_played()['items']
 
+print("*** MARKDOWN LIST OF ARTISTS WITH LINKS ***")
 # frame to hold artists
 artists = pd.DataFrame()
 
@@ -38,3 +39,30 @@ artist_counts.columns = ["artist_name", "artist_uri", "artist_page", "song_count
 
 for i, r in artist_counts.sort_values("song_count", ascending=False).iterrows():
     print("* [" + r["artist_name"] + "](" + r["artist_page"] + ")")
+
+
+# get the genres I've been listening to the most
+print("\n\n *** MARKDOWN LIST OF MOST COMMON GENRES ***")
+
+genre_counts = dict()
+
+# each song
+for s in last_songs_dict:
+
+    # each artist involved in the song
+    for a in s["track"]["artists"]:
+        artist_uri = a["uri"]
+
+        genres = spotify.artist(artist_uri)['genres']
+
+        # each genre associated with the artist
+        for i in genres:
+            genre_counts[i] = genre_counts.get(i, 0) + 1
+
+genre_counts = pd.DataFrame(list(genre_counts.items()), columns=['genre', 'count'])
+genre_counts = genre_counts.sort_values("count", ascending=False)
+
+top_10 = genre_counts["genre"].head(10)
+
+for g in top_10:
+    print("*", g)
