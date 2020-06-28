@@ -10,11 +10,12 @@ Here's what I've been up to in Spring of 2020
 ## Books
 
 ### Currently Reading
-* [On Becoming Babywise](https://en.wikipedia.org/wiki/On_Becoming_Baby_Wise)
-    * This was a gift from a coworker, some of the implications are dated (happy babies are raised by a married man and woman :/// ) but many of the topics on schedules and sleep have been very helpful 
+* [There's No Such Thing as Bad Weather by  Linda Åkeson McGurk](https://www.goodreads.com/en/book/show/34466962-there-s-no-such-thing-as-bad-weather)
 
 
 ### Finished
+* [On Becoming Babywise](https://en.wikipedia.org/wiki/On_Becoming_Baby_Wise)
+    * This was a gift from a coworker, some of the implications are dated (happy babies are raised by a married man and woman :/// ) but many of the topics on schedules and sleep have been very helpful 
 * [Dealing with Dragons by Patricia C. Wrede](https://www.amazon.com/Dealing-Dragons-Enchanted-Forest-Chronicles/dp/0590457225)
     * Book one of the Enchanted Forest Chronicles - favorites from my childhood
 * [The Brain Fog Fix by Dr. Mike Dow](https://www.amazon.com/Brain-Fog-Fix-Reclaim-Memory/dp/1401946488)
@@ -49,16 +50,16 @@ Here's what I've been up to in Spring of 2020
 
 *See [this blog post](http://mtanco.github.io/recent-artists-list/) for how this list is generated*
 
-* chanson
-* vintage schlager
-* torch song
-* shamanic
-* kirtan
 * calming instrumental
-* healing
-* downtempo
-* world fusion
-* meditation
+* alternative emo
+* emo
+* heartland rock
+* indie punk
+* orgcore
+* philly indie
+* pop punk
+* punk
+* skate punk
 
 ## Podcasts
 
