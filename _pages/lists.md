@@ -10,10 +10,10 @@ Here's what I've been up to in Spring of 2020
 ## Books
 
 ### Currently Reading
-* [There's No Such Thing as Bad Weather by  Linda Åkeson McGurk](https://www.goodreads.com/en/book/show/34466962-there-s-no-such-thing-as-bad-weather)
 
 
 ### Finished
+* [There's No Such Thing as Bad Weather by  Linda Åkeson McGurk](https://www.goodreads.com/en/book/show/34466962-there-s-no-such-thing-as-bad-weather)
 * [On Becoming Babywise](https://en.wikipedia.org/wiki/On_Becoming_Baby_Wise)
     * This was a gift from a coworker, some of the implications are dated (happy babies are raised by a married man and woman :/// ) but many of the topics on schedules and sleep have been very helpful 
 * [Dealing with Dragons by Patricia C. Wrede](https://www.amazon.com/Dealing-Dragons-Enchanted-Forest-Chronicles/dp/0590457225)
@@ -71,6 +71,7 @@ Here's what I've been up to in Spring of 2020
 
 ## TV Shows
 
+* [Travelers](https://en.wikipedia.org/wiki/Travelers_(TV_series))
 * [Avatar: The Last Airbender](https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender)
 * [Hannibal Season 1 & 2](https://en.wikipedia.org/wiki/Hannibal_(TV_series))
 * [Dracula](https://en.wikipedia.org/wiki/Dracula_(2020_TV_series))
