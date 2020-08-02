@@ -5,14 +5,16 @@ permalink: /lists/
 author_profile: true
 ---
 
-Here's what I've been up to in Spring of 2020 
+Here's what I've been up to in 2020 
 
 ## Books
 
 ### Currently Reading
+* Blue Adept by Piers Anthony
 
 
 ### Finished
+* Split Infinity by Piers Anthony
 * [There's No Such Thing as Bad Weather by  Linda Åkeson McGurk](https://www.goodreads.com/en/book/show/34466962-there-s-no-such-thing-as-bad-weather)
 * [On Becoming Babywise](https://en.wikipedia.org/wiki/On_Becoming_Baby_Wise)
     * This was a gift from a coworker, some of the implications are dated (happy babies are raised by a married man and woman :/// ) but many of the topics on schedules and sleep have been very helpful 
@@ -24,15 +26,11 @@ Here's what I've been up to in Spring of 2020
     * In 2011, Patti Smith came to Ursinus College to give a talk - I went because of a boy, of course - and was absolutely transformed. My love of Lou Reed, Bob Dylan, the 70s come from this day. I read this book at the end of every year of college but haven't come back to it for a few years. Seems appropriate to revisit in this new time of transition as I take "summer break" from my tech  job to focus on the baby.
 * [Yes, Please by Amy Poehler](https://www.goodreads.com/book/show/20910157-yes-please)
     * This was fun
-    
-### Temporarily Abandoned 
-* [A Beginners Guide to Python 3 Programming](https://link.springer.com/book/10.1007%2F978-3-030-20290-3)
-    * Was available free on Springer for a while - a nice refresher on how the language works which I'm enjoying as someone that never formally learned the language from anywhere other than StackOverflow
-
-
 
 ## Movies
 
+* Crouching Tiger, Hidden Dragon: Sword of Destiny
+* Back to the Future
 * [Clueless](https://en.wikipedia.org/wiki/Clueless_(film))
     * <3 Paul Rudd
 * [Mystery Woman: Mystery Weekend](https://www.imdb.com/title/tt0427576/?ref_=ttls_li_tt)
@@ -50,16 +48,16 @@ Here's what I've been up to in Spring of 2020
 
 *See [this blog post](http://mtanco.github.io/recent-artists-list/) for how this list is generated*
 
-* calming instrumental
-* alternative emo
-* emo
-* heartland rock
-* indie punk
-* orgcore
-* philly indie
-* pop punk
-* punk
-* skate punk
+* alternative rock
+* indie pop
+* modern rock
+* indie rock
+* chamber pop
+* stomp and holler
+* indie folk
+* acoustic pop
+* neo mellow
+* dance-punk
 
 ## Podcasts
 
@@ -71,6 +69,10 @@ Here's what I've been up to in Spring of 2020
 
 ## TV Shows
 
+* Supermarket Sweep
+* NCIS Season 1 & 2
+* Ancient Aliens 
+* Unsolved Mysteries
 * [Travelers](https://en.wikipedia.org/wiki/Travelers_(TV_series))
 * [Avatar: The Last Airbender](https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender)
 * [Hannibal Season 1 & 2](https://en.wikipedia.org/wiki/Hannibal_(TV_series))
